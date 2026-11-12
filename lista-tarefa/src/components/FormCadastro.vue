@@ -3,12 +3,13 @@
     import { useRouter } from 'vue-router';
     import { useAuthStore } from '@/stores/auth';
 
-    // router = "controle remoto" para trocar de página
+    //o router é tipo o "controle remoto" para trocar de página
     const router = useRouter();
-    // store = onde fica a função register que fala com a API
+    //store é onde fica a função register que fala com a API
     const authStore = useAuthStore();
 
-    // Os campos digitados no formulário (v-model liga o input a esta variável)
+    //Os campos digitados no formulário (v-model liga 
+    // o input a esta variável)
     const item = ref({
         name: "",
         email: "",
@@ -16,7 +17,8 @@
         password_confirmation: ""
     });
 
-    // Texto de erro que aparece em vermelho na tela (vazio = sem erro)
+    // Texto de erro que aparece em vermelho na 
+    // tela (vazio = sem erro)
     const erro = ref("");
 
     async function cadastrar(){
@@ -39,7 +41,7 @@
             router.push('/');   // volta para a tela de login
         }catch(error){
             // A API manda os erros em error.response.data.errors
-            // Ex.: { email: ["Este e-mail já está cadastrado."] }
+            //exemplo: email: ["Este e-mail já está cadastrado."]
             const dados = error.response?.data;
             if(dados?.errors){
                 erro.value = Object.values(dados.errors).flat().join(" ");

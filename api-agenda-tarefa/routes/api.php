@@ -11,7 +11,7 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::post('login', [AuthController::class, "login"]);
-// NOVO: rota do cadastro (POST http://127.0.0.1:8000/api/register)
+
 Route::post('register', [AuthController::class, "register"]);
 Route::apiResource('categorias', CategoriaController::class);
 Route::apiResource('tarefas', TarefaController::class);

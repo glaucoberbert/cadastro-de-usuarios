@@ -33,7 +33,7 @@ import router from '@/router';
             <input type="submit" value="Entrar">
         </form>
 
-        <!-- NOVO: link que leva para a tela de cadastro -->
+        <!-- link pra tela de cadastro -->
         <p>Não tem conta? <RouterLink to="/cadastro">Criar conta</RouterLink></p>
     </div>
 </template>

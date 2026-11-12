@@ -10,7 +10,7 @@ const router = createRouter({
       name: 'login',
       component: Login,
     },
-    // NOVO: rota da tela de cadastro (http://localhost:5173/cadastro)
+    //rota da tela de cadastro
     {
       path: '/cadastro',
       name: 'cadastro',

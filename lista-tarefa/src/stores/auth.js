@@ -23,10 +23,9 @@ export const useAuthStore = defineStore("auth", ()=>{
         }
     }
 
-    // ===================== NOVO: CADASTRO =====================
-    // Manda os dados para a API (POST /register).
-    // Se der certo, devolve o usuário criado.
-    // Se der erro, "joga" o erro para quem chamou (o formulário) mostrar.
+    //aqui no cadastro ele vai mandar os dados pra api, aí se der
+    //certo ele devolve o usuário criado, se n, ele joga o erro pro
+    //formulário mostrar
     const register = async (name, email, password, password_confirmation) => {
         try{
             const response = await api.post("/register", 
