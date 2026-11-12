@@ -1,27 +1,27 @@
-COMO RODAR O PROJETO
+# COMO RODAR O PROJETO
 
 Ter o PHP, Composer, Node.js e NPM instalados e o MySQL instalado e em execução 
 (utilizei o XAMPP mesmo)
 
 API — pasta "api-agenda-tarefa"
 
-1. Ligar o MySQL e criar o banco de dados "agenda-tarefa"
+1. Ligar o MySQL pelo XAMPP e criar o banco de dados "agenda-tarefa"
 
-2. No terminal do VS Code, dentro da pasta "api-agenda-tarefa", 
-executar `copy .env.example .env` para criar o arquivo ".env"
+2. No terminal do VS Code, dentro da pasta "api-agenda-tarefa", executar `copy .env.example .env` para criar o arquivo ".env"
 
-3. Executar `code .env` para abrir o arquivo no VS Code
+3. Executar `notepad .env` para abrir o arquivo no Bloco de Notas
 
-4. No arquivo aberto, deixar o DB_DATABASE como "agenda-tarefa", o 
-DB_USERNAME como "root" e o DB_PASSWORD vazio, depois salvar as alterações
+4. Procurar DB_PASSWORD e deixar vazio, sem nada depois do sinal de igual
 
-5. Executar composer install
+5. Salvar as alterações com Ctrl + S e fechar o Bloco de Notas
 
-6. Executar php artisan key:generate
+6. Executar composer install
 
-7. Executar php artisan migrate
+7. Executar php artisan key:generate
 
-8. Executar php artisan serve
+8. Executar php artisan migrate
+
+9. Executar php artisan serve
 
 Front-end — pasta "lista-tarefa"
 
